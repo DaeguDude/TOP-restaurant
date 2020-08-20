@@ -53,3 +53,21 @@ I have finished up until making prototype of my hard code html and css. Tomorrow
 ## 08/20
 
 **HARD CODE HTML AND CSS**
+
+Today, I'm going to hard code the prototype that I made starting from Landing page to About, Menu, and Contact lastly. I am not too sure if I can make it today, but that doesn't matter. I'll just focus on doing it and learn as much as I can!
+
+### TODAY REVIEW
+
+So today, I have made a basic layout and started working on the header. Here's the finished product??? of today.
+
+![08-20](./img/08-20.png)
+
+I have been little stuck at making flex items(`#nav-bar li`) to fit in the flex container(`#nav-bar`). And I have found a weird behaviour. When you give flex items the percentage as their padding value, it will overflow the flex container. However, when you give the pixel as their padding value, it doesn't overflow and the flex container stretches to be the total width of flex items.
+
+I don't know what the differences between them are, I hope someone answer my [post](https://stackoverflow.com/questions/63501553/why-doesnt-flex-container-to-be-the-width-of-flex-items-when-flex-items-paddin?noredirect=1#comment112289357_63501553) that I posted in the stackoverflow.
+
+### UPDATE
+
+Someone answer me with this [link](https://stackoverflow.com/questions/53536266/why-does-percentage-padding-break-my-flex-item). Have a look at it tomorrow.
+
+

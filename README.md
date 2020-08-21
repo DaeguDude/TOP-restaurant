@@ -70,4 +70,10 @@ I don't know what the differences between them are, I hope someone answer my [po
 
 Someone answer me with this [link](https://stackoverflow.com/questions/53536266/why-does-percentage-padding-break-my-flex-item). Have a look at it tomorrow.
 
+## 08/21
+
+Today, I started with the [question](https://stackoverflow.com/questions/63501553/why-doesnt-flex-container-to-be-the-width-of-flex-items-when-flex-items-paddin?noredirect=1#comment112289357_63501553) that I had yesterday, and I was finally able to solve it. And I'm going to write a post about it.
+
+Today, I was able to finish landing page and about page, it was easy after done making landing page, because I just had to change the image regarding to the page.
+
 

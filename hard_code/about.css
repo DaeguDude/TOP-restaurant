@@ -97,17 +97,35 @@ main {
 #phrase-box {
   position: absolute;
   width: 66%;
-  max-width: 930px;
   
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* INDEX */
+#phrase-box {
+  position: absolute;
+  width: 66%;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-#main-phrase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#phrase-box span {
   color: #fff;
   font-size: 3.75rem;
   text-align: center;
 }
+
+#phrase-box p {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+

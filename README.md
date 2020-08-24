@@ -76,4 +76,8 @@ Today, I started with the [question](https://stackoverflow.com/questions/6350155
 
 Today, I was able to finish landing page and about page, it was easy after done making landing page, because I just had to change the image regarding to the page.
 
+## 08/23
+
+Today, I've finished making all the pages with html and css. The design part is not really perfect from my point of view, however, I think what's more important here is actually to understand what webpack is and how to use it, so I'll proceed.
+
 

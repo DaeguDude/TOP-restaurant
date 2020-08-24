@@ -1,3 +1,13 @@
 import { initialLoad } from './initial-load'
 
-initialLoad();
+
+let content = document.getElementById('content');
+
+/**
+ * InitialLoad is going to return the container that contains
+ * all html for index.html
+ */ 
+content.appendChild(initialLoad());
+
+
+

@@ -80,4 +80,40 @@ Today, I was able to finish landing page and about page, it was easy after done 
 
 Today, I've finished making all the pages with html and css. The design part is not really perfect from my point of view, however, I think what's more important here is actually to understand what webpack is and how to use it, so I'll proceed.
 
+## 08/24
 
+### Working on: Task 5
+
+Make all html contents that are in index.html with just javascript in `initialLoad.js` file and export it to `src/index.html`.
+
+Okay, I've finished it. However, now I'm curious, while I can see the why we need to use module, but what about css? Do you also need to create styles just in javascript file? Then I feel like it's much of more hassles then normal workflow.
+
+Okay. I have asked TOP discord how to load css in webpack, and he gave me this [link](https://webpack.js.org/guides/asset-management/). I will go through this.
+
+## 08/25
+
+### Working on Task6
+
+Today, I've successfully managed how to load css in webpack, basically all you need to do was to install some css loader into the webpack, and you move css files to the src directory. And I've also wrote code for the tab in each module. So what I just need to do is to integrate that module into one bundle, so when tab is clicked it can load the correct module
+
+### Tomorrow to do
+
+- Make a module for loading the header. Because it's just used again and again
+- Figure out the way to implement tab switching logic
+  - Maybe I shouldn't use `<a>` tag that will link to the other page, just make it like button and load the content
+
+## 08/26
+
+- ~~Let's make a module for loading the repeated contents.~~
+- When tab(Home, About, Menu, Contact) is clicked, wipe out the current contents and load the appropriate contents
+  - ~~How do I know tab is clicked?~~
+  - How to load the contents?
+  - How to load appropriate CSS?
+
+### TODAY REVIEW
+
+I got stuck at **How to load the contents**. Turns out, Because `ul#nav-bar` isn't the same navBar across the module. So even though I added an eventListener to that navBar, because when the content is loaded, it becomes different `navBar` so it doesn't have a eventListener.
+
+There's 2 ways to solve this problem
+  1. Make navBar same across whole module. Each module produces just mainContainer part
+  2. Add eventListeners to the navBar of the tab when tab is clicked

@@ -12,6 +12,11 @@ ul {
   list-style-type: none;
 }
 
+/* When list is hovered, change a mouse pointer into a handpointer */
+li:hover {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -54,15 +59,12 @@ header {
 /*  */
 #nav-bar li {
   margin-right: 20px;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 #nav-bar li:last-child {
   margin-right: 0;
-}
-
-#nav-bar li a {
-  color: #fff;
-  font-size: 1.5rem;
 }
 
 /* MAIN */
@@ -116,13 +118,13 @@ main {
   justify-content: center;
 }
 
-#phrase-box span {
+#phrase-box-span {
   color: #fff;
   font-size: 3.75rem;
   text-align: center;
 }
 
-#phrase-box p {
+#phrase-box-p {
   margin-top: 20px;
   color: #fff;
   font-size: 2rem;

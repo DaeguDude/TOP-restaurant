@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* When list is hovered, change a mouse pointer into a handpointer */
+li:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  min-height: 100px;
+}
+
+#header-container {
+  height: 100%;
+  background: #262222;
+  padding: 0 2.9%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#restaurant-title {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#restaurant-title #kor {
+  color: #E33535;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+/*  */
+#nav-bar li {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#nav-bar li:last-child {
+  margin-right: 0;
+}
+
+/* MAIN */
+
+main {
+  flex: 8.5 0 0;
+  min-height: 500px;
+}
+
+#main-container {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.main-container-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

@@ -90,16 +90,8 @@ main {
   opacity: 0.5;
 }
 
-#phrase-box {
-  position: absolute;
-  width: 66%;
-  
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-#phrase-box {
+#about-phrase-box {
   position: absolute;
   width: 66%;
   

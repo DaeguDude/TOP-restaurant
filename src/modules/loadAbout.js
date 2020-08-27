@@ -1,7 +1,7 @@
 // Function for loading About tab
 const loadAbout = () => {
-  let mainContainer = document.createElement('div');
-  mainContainer.setAttribute('id', 'main-container');
+  let aboutMainContainer = document.createElement('div');
+  aboutMainContainer.setAttribute('id', 'about-main-container');
 
   // Main Container contents
   let aboutImg = document.createElement('img');
@@ -9,8 +9,8 @@ const loadAbout = () => {
   aboutImg.setAttribute('id', 'about-img');
   aboutImg.setAttribute('alt', 'about-img');
 
-  let phraseBox = document.createElement('div');
-  phraseBox.setAttribute('id', 'phrase-box');
+  let aboutPhraseBox = document.createElement('div');
+  aboutPhraseBox.setAttribute('id', 'about-phrase-box');
 
   let phraseBoxSpan = document.createElement('span');
   phraseBoxSpan.setAttribute('id', 'phrase-box-span');
@@ -22,12 +22,12 @@ const loadAbout = () => {
 
 
   // Appending elements to the Main
-  phraseBox.appendChild(phraseBoxSpan);
-  phraseBox.appendChild(phraseBoxP);
-  mainContainer.appendChild(aboutImg);
-  mainContainer.appendChild(phraseBox);
+  aboutPhraseBox.appendChild(phraseBoxSpan);
+  aboutPhraseBox.appendChild(phraseBoxP);
+  aboutMainContainer.appendChild(aboutImg);
+  aboutMainContainer.appendChild(aboutPhraseBox);
   
-  return mainContainer;
+  return aboutMainContainer;
 }
 
 export { loadAbout }

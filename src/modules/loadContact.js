@@ -1,7 +1,7 @@
 // Function for loading Contact tab
 const loadContact = () => {
-  let mainContainer = document.createElement('div');
-  mainContainer.setAttribute('id', 'main-container');
+  let contactMainContainer = document.createElement('div');
+  contactMainContainer.setAttribute('id', 'contact-main-container');
 
   // mainContainerContents
   let contactImg = document.createElement('img');
@@ -27,10 +27,10 @@ const loadContact = () => {
   // Appending elements to the Main
   contactSection.appendChild(contactTxt);
   contactSection.appendChild(contactIcons);
-  mainContainer.appendChild(contactImg);
-  mainContainer.appendChild(contactSection);
+  contactMainContainer.appendChild(contactImg);
+  contactMainContainer.appendChild(contactSection);
   
-  return mainContainer;
+  return contactMainContainer;
 }
 
 export { loadContact }

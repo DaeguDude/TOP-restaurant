@@ -1,13 +1,13 @@
 // Function for loading Menu tab
 const loadMenu = () => {
-  let mainContainer = document.createElement('div');
-  mainContainer.setAttribute('id', 'main-container');
+  let menuMainContainer = document.createElement('div');
+  menuMainContainer.setAttribute('id', 'menu-main-container');
 
   // mainContainer
   let mainContainerItems = [];
   for(let i = 0; i < 6; i++) {
     let div = document.createElement('div');
-    div.setAttribute('class', 'main-container-items');
+    div.setAttribute('class', 'menu-items');
     switch(i) {
       case 0:
         div.innerHTML = '<img src="../img/makchang.jpg" alt="makchang"></img>'
@@ -38,9 +38,9 @@ const loadMenu = () => {
   }
 
   // Appending elements to the mainContainer
-  mainContainerItems.forEach(div => mainContainer.appendChild(div));
+  mainContainerItems.forEach(div => menuMainContainer.appendChild(div));
   
-  return mainContainer;
+  return menuMainContainer;
 }
 
 export { loadMenu }

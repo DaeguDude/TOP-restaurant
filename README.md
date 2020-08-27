@@ -120,5 +120,7 @@ There's 2 ways to solve this problem
 
 ## 08/27
 
-- How to load the contents?
+- ~~How to load the contents?~~
 > I've solved this problem by making navBar same across whole module. Each module produces just mainContainer part
+
+- How to load appropriate CSS?

@@ -7,6 +7,7 @@ import { loadContact } from './modules/loadContact'
 // CSS
 import './css/style.css'
 
+
 let content = document.getElementById('content');
 
 // Loading Home Contents

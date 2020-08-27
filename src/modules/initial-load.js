@@ -1,7 +1,7 @@
 // Initial load for Home tab
 const initialLoad = () => {
-  let mainContainer = document.createElement('div');
-  mainContainer.setAttribute('id', 'main-container');
+  let homeMainContainer = document.createElement('div');
+  homeMainContainer.setAttribute('id', 'home-main-container');
 
   // elements that belong to mainContainer
   let landingImg = document.createElement('img');
@@ -18,10 +18,10 @@ const initialLoad = () => {
 
   // Appending elements to the Main
   phraseBox.appendChild(mainPhrase);
-  mainContainer.appendChild(landingImg);
-  mainContainer.appendChild(phraseBox);
+  homeMainContainer.appendChild(landingImg);
+  homeMainContainer.appendChild(phraseBox);
 
-  return mainContainer;
+  return homeMainContainer;
 }
 
 // Function for the initial setup that's repeated again and again

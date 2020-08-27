@@ -123,4 +123,13 @@ There's 2 ways to solve this problem
 - ~~How to load the contents?~~
 > I've solved this problem by making navBar same across whole module. Each module produces just mainContainer part
 
-- How to load appropriate CSS?
+- ~~How to load appropriate CSS?~~
+> I just aggregated all CSS files into one file. I don't know this is the most optimized solution, however, the aim of this project is
+just to understand the module and use it. I did use module to load the contents so I guess it's good.
+
+### TODAY REVIEW
+
+I've got every tasks done just right before uploading to the github pages!
+
+Let's work on TASK7 tomorrow :)
+

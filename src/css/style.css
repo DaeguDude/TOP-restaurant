@@ -15,8 +15,9 @@ ul {
 /* When list is hovered, change a mouse pointer into a handpointer */
 li:hover {
   cursor: pointer;
+  border-bottom: 5px solid #20de83;
 }
-
+  
 a {
   text-decoration: none;
 }

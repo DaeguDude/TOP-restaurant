@@ -1,9 +1,7 @@
 // Initial load for Home tab
 const initialLoad = () => {
-  // Repeated Setup, Loading Header and get main, mainContainer elements
-  let container = repeatedSetup();
-  let main = container.getElementsByTagName('main')[0];
-  let mainContainer = main.children[0];
+  let mainContainer = document.createElement('div');
+  mainContainer.setAttribute('id', 'main-container');
 
   // elements that belong to mainContainer
   let landingImg = document.createElement('img');
@@ -22,10 +20,8 @@ const initialLoad = () => {
   phraseBox.appendChild(mainPhrase);
   mainContainer.appendChild(landingImg);
   mainContainer.appendChild(phraseBox);
-  main.appendChild(mainContainer)
-  container.appendChild(main);
-  
-  return container;
+
+  return mainContainer;
 }
 
 // Function for the initial setup that's repeated again and again
@@ -44,9 +40,6 @@ const repeatedSetup = () => {
   // Container - Direct elements
   let headerContainer = document.createElement('div');
   headerContainer.setAttribute('id', 'header-container');
-
-  let mainContainer = document.createElement('div');
-  mainContainer.setAttribute('id', 'main-container');
 
 
   // headerContainer elements
@@ -90,7 +83,6 @@ const repeatedSetup = () => {
   container.appendChild(header);
 
   // Initial Main Setup
-  main.appendChild(mainContainer);
   container.appendChild(main);
 
   return container;

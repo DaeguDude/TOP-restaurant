@@ -1,13 +1,9 @@
-import { repeatedSetup } from './initial-load'
-
 // Function for loading About tab
 const loadAbout = () => {
-  // Repeated Setup, Loading Header and get main, mainContainer elements
-  let container = repeatedSetup();
-  let main = container.getElementsByTagName('main')[0];
-  let mainContainer = main.children[0];
+  let mainContainer = document.createElement('div');
+  mainContainer.setAttribute('id', 'main-container');
 
-  // mainContainer
+  // Main Container contents
   let aboutImg = document.createElement('img');
   aboutImg.setAttribute('src', '../img/About.jpg');
   aboutImg.setAttribute('id', 'about-img');
@@ -30,10 +26,8 @@ const loadAbout = () => {
   phraseBox.appendChild(phraseBoxP);
   mainContainer.appendChild(aboutImg);
   mainContainer.appendChild(phraseBox);
-  main.appendChild(mainContainer)
-  container.appendChild(main);
   
-  return container;
+  return mainContainer;
 }
 
 export { loadAbout }

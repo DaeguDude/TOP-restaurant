@@ -1,13 +1,9 @@
-import { repeatedSetup } from './initial-load'
-
 // Function for loading Contact tab
 const loadContact = () => {
-  // Repeated Setup, Loading Header and get main, mainContainer elements
-  let container = repeatedSetup();
-  let main = container.getElementsByTagName('main')[0];
-  let mainContainer = main.children[0];
+  let mainContainer = document.createElement('div');
+  mainContainer.setAttribute('id', 'main-container');
 
-  // mainContainer
+  // mainContainerContents
   let contactImg = document.createElement('img');
   contactImg.setAttribute('src', '../img/contact.jpg');
   contactImg.setAttribute('id', 'contact-img');
@@ -33,10 +29,8 @@ const loadContact = () => {
   contactSection.appendChild(contactIcons);
   mainContainer.appendChild(contactImg);
   mainContainer.appendChild(contactSection);
-  main.appendChild(mainContainer)
-  container.appendChild(main);
   
-  return container;
+  return mainContainer;
 }
 
 export { loadContact }

@@ -117,3 +117,8 @@ I got stuck at **How to load the contents**. Turns out, Because `ul#nav-bar` isn
 There's 2 ways to solve this problem
   1. Make navBar same across whole module. Each module produces just mainContainer part
   2. Add eventListeners to the navBar of the tab when tab is clicked
+
+## 08/27
+
+- How to load the contents?
+> I've solved this problem by making navBar same across whole module. Each module produces just mainContainer part

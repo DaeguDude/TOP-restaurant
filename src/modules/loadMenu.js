@@ -1,11 +1,7 @@
-import { repeatedSetup } from './initial-load'
-
 // Function for loading Menu tab
 const loadMenu = () => {
-  // Repeated Setup, Loading Header and get main, mainContainer elements
-  let container = repeatedSetup();
-  let main = container.getElementsByTagName('main')[0];
-  let mainContainer = main.children[0];
+  let mainContainer = document.createElement('div');
+  mainContainer.setAttribute('id', 'main-container');
 
   // mainContainer
   let mainContainerItems = [];
@@ -41,12 +37,10 @@ const loadMenu = () => {
     mainContainerItems.push(div);
   }
 
-  // Appending elements to the Main
+  // Appending elements to the mainContainer
   mainContainerItems.forEach(div => mainContainer.appendChild(div));
-  main.appendChild(mainContainer)
-  container.appendChild(main);
   
-  return container;
+  return mainContainer;
 }
 
 export { loadMenu }

@@ -133,3 +133,15 @@ I've got every tasks done just right before uploading to the github pages!
 
 Let's work on TASK7 tomorrow :)
 
+## 08/28
+
+As I am uploading my project to github pages...
+
+### Problem
+
+- It doesn't upload images
+- What does `git subtree push --prefix dist origin gh-pages` mean?
+  - What is git subtree
+  - what is --prefix
+  - what is dist here, I assume it's a directory name
+

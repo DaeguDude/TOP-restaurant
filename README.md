@@ -139,7 +139,7 @@ As I am uploading my project to github pages...
 
 ### Problem
 
-- It doesn't upload images
+- ~~It doesn't upload images~~
 - What does `git subtree push --prefix dist origin gh-pages` mean?
   - What is git subtree
   - what is --prefix

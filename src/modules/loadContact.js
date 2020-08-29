@@ -1,3 +1,5 @@
+import contactPageImg from '../img/contact.jpg'
+
 // Function for loading Contact tab
 const loadContact = () => {
   let contactMainContainer = document.createElement('div');
@@ -5,7 +7,7 @@ const loadContact = () => {
 
   // mainContainerContents
   let contactImg = document.createElement('img');
-  contactImg.setAttribute('src', '../img/contact.jpg');
+  contactImg.setAttribute('src', contactPageImg);
   contactImg.setAttribute('id', 'contact-img');
   contactImg.setAttribute('alt', 'contact-img');
 

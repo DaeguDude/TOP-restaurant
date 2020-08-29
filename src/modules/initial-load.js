@@ -1,3 +1,5 @@
+import landingPageImg from '../img/my-landing-page.jpg';
+
 // Initial load for Home tab
 const initialLoad = () => {
   let homeMainContainer = document.createElement('div');
@@ -5,7 +7,7 @@ const initialLoad = () => {
 
   // elements that belong to mainContainer
   let landingImg = document.createElement('img');
-  landingImg.setAttribute('src', '../img/my-landing-page.jpg');
+  landingImg.setAttribute('src', landingPageImg);
   landingImg.setAttribute('id', 'landing-img');
   landingImg.setAttribute('alt', 'landing-page');
 

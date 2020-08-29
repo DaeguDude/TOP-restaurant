@@ -1,3 +1,12 @@
+import makChangImg from '../img/makchang.jpg'
+import kimbapImg from '../img/kimbap.jpg'
+import spicyRadishImg from '../img/spicy-radish.jpg'
+import bibimbapImg from '../img/bibimbap.jpg'
+import crabImg from '../img/crab.jpg'
+import bulgogiImg from '../img/bulgogi.jpg'
+
+
+
 // Function for loading Menu tab
 const loadMenu = () => {
   let menuMainContainer = document.createElement('div');
@@ -8,29 +17,39 @@ const loadMenu = () => {
   for(let i = 0; i < 6; i++) {
     let div = document.createElement('div');
     div.setAttribute('class', 'menu-items');
+
+    // Create a new image HTML element
+    const img = new Image();
+    
     switch(i) {
       case 0:
-        div.innerHTML = '<img src="../img/makchang.jpg" alt="makchang"></img>'
+        img.src = makChangImg;
+        div.appendChild(img);
         break;
     
       case 1:
-        div.innerHTML = '<img src="../img/kimbap.jpg" alt="kimbap"></img>'
+        img.src = kimbapImg;
+        div.appendChild(img);
         break;
     
       case 2:
-        div.innerHTML = '<img src="../img/spicy-radish.jpg" alt="spicy-radish"></img>'
+        img.src = spicyRadishImg;
+        div.appendChild(img);
         break;
     
       case 3:
-        div.innerHTML = '<img src="../img/bibimbap.jpg" alt="bibimbap"></img>'
+        img.src = bibimbapImg;
+        div.appendChild(img);
         break;
 
       case 4:
-        div.innerHTML = '<img src="../img/crab.jpg" alt="crab"></img>'
+        img.src = crabImg;
+        div.appendChild(img);
         break; 
       
       case 5:
-        div.innerHTML = '<img src="../img/bulgogi.jpg" alt="bulgogi"></img>'
+        img.src = bulgogiImg;
+        div.appendChild(img);
         break;
     }
 

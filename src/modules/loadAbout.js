@@ -1,3 +1,5 @@
+import aboutPageImg from '../img/About.jpg';
+
 // Function for loading About tab
 const loadAbout = () => {
   let aboutMainContainer = document.createElement('div');
@@ -5,7 +7,7 @@ const loadAbout = () => {
 
   // Main Container contents
   let aboutImg = document.createElement('img');
-  aboutImg.setAttribute('src', '../img/About.jpg');
+  aboutImg.setAttribute('src', aboutPageImg);
   aboutImg.setAttribute('id', 'about-img');
   aboutImg.setAttribute('alt', 'about-img');
 

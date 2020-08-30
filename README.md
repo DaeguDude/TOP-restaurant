@@ -145,3 +145,21 @@ As I am uploading my project to github pages...
   - what is --prefix
   - what is dist here, I assume it's a directory name
 
+## 08/29
+
+### TODAY REVIEW
+
+- 2 Pomodoros
+
+I've got image integration done~! I used `file-loader` in the webpack which is used to load the images and process it, and put out
+in the output directory.
+
+Dodo~!~!
+
+THOUGHT INTEGRATION WAS DONE BUT NOT....
+I GUESS I WILL HAVE TO DO IT TOMORROW
+
+## 08/30
+
+GET IMAGE INTEGRATION DONE!
+
